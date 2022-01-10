@@ -1,13 +1,359 @@
-body {
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #c5c5c5;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.container {
+  padding: 30px 100px;
+}
+
+.project {
+    background: white;
+    border-radius: 1rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.project h1 {
+  margin-top: 0.5rem;
+}
+
+.project h4 {
+  color: red;
+  font-size: 0.75rem;
+  /* margin-top: 0.5rem; */
+}
+
+.project img {
+width: 300px;
+}
+
+.project-filteredBook {
+  padding: 30px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 3em;
+}
+/* 
+.projectList {
+  display: grid;
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2em auto;
+  gap: 2rem;
+  grid-template-columns: repeat(3, 1fr);
+} */
+
+.form-filteredBook {
+  display: flex;
+  justify-content: center;
+}
+
+/* Formularios */
+
+.estilos-formulario {
+  /* width: 50%; */
+  padding: 30px 0px;
+  flex-direction: column;
+}
+
+.estilos-formulario input {
+  padding: 10px;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  width: 400px;
+  border: none;
+}
+
+.estilos-formulario input[type=submit] {
+  background-color: #455073;
+  color: #c5c5c5;;
+
+}
+
+
+.hero-section {
+  /* background-image: url(https://source.unsplash.com/TuNYNsK0OC0); */
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+  margin: auto;
+  /* height: 100vh; */
+  background-repeat: no-repeat;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+/* section {
+  height: 100vh;
+} */
+
+.hero-section h3 {
+  color: white;
+background-color: cadetblue;
+padding: 10px 20px;
+}
+
+
+
+.hero-title h1 {
+  font-size: 6em;
+  text-transform: uppercase;
+  font-family: 'Times New Roman', Times, serif  ;
+}
+
+/* Heredado */
+
+
+a:hover {
+  text-decoration: none;
+}
+
+
+.title {
+  text-align: center;
+  margin-top: 3em;
+}
+
+.projectList {
+  display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+  /* width: 90vw; */
+  /* max-width: 1170px;
+  margin: 2em auto; */
+  gap: 2rem;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  /* padding: 2rem 5rem; */
+  align-items: center;
+  background-color: #455073;
+}
+
+.header-nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.header-nav-list li {
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+.product-card {
+  background-color: white;
+}
+
+.product-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 50px;
+  height: 100vh;
+}
+
+.HeroLink {
+  /* margin-left: 20px; */
+  text-decoration: none;
+  color: black;
+}
+
+.HeroLink a:hover  {
+  text-decoration: none;
+}
+
+.BrandLink {
+  text-decoration: none;
+  color: white;
+}
+
+
+.BrandLink a:hover  {
+  text-decoration: none;
+}
+
+.header-nav-list li:last-child a {
+  background-color: white;
+  color: black !important;
+  border-radius: 20px;
+  border: none;
+  padding: 20px 30px;
+}
+
+.btnComprarWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.btnComprar {
+  background-color: black;
+  padding: 10px 20px;
+}
+
+.section-title {
+  font-size: 2em;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 20px;
+  }
+  
+  .projectList {
+    grid-template-columns:1fr;
+  }
+
+  .hero-section  {
+    flex-direction: column;
+    height: auto;
+  }
+  
+}
+
+.video-wrapper {
+  display: flex;
+  justify-content: center;
+
+}
+
+.video-frame {
+  margin: 30px;
+}
+
+footer {
+  background-color: #455073;
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem 5rem;
+  align-items: center;
+  color: white;
+}
+
+footer div {
+  width: 30%;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer div h3 {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.titulo-home {
+  text-align: center;
+  font-size: 1.2em;
+  padding: 2em 0;
+}
+
+.btn-comprar {
+  padding: 0.5em 1em;
+  border: 1px solid aliceblue;
+  border-radius: 0.2em;
+}
+
+
+.project-title {
+  font-size: 2em;
+  color: red;
+}
+
+.imageContainer {
+  display: block;
+  text-align: center;
+  position: relative;
+  transition: all 0.3s ease;
+
+}
+
+.imageContainer a {
+    transition: all 0.3s ease;
+
+}
+
+.imageContainer a button {
+  display: block;
+  transition: all 0.8s ease;
+
+  position: absolute;
+  top: 250px;
+  width: 100%;
+  margin: 0;
+  border: none;
+}
+
+.imageSize {
+  height: fit-content;
+}
+
+
+.breadcrumbs {
+  padding: 30px 0px;
+  text-align: center;
+}
+
+.breadcrumbs h3 {
+  font-size: 16px;
+}
+
+.isNovedad article {
+  border-top: 4px solid cadetblue;
+}
+
+.isNovedad article:before {
+  content: 'Novedad';
+  padding: 5px;
+}
+
+.card-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 100px;
+  padding: 40px;
+}
+
+.card {
+  padding: 40px;
+  /* margin: 40px; */
+  background-color: white;
+}
+
+.card img {
+  /* width: 100%; */
+  /* height: 200px; */
+  padding: 30px;
+}
+
+.card h2 {
+  font-size: 16px;
+}
+
+.product-card img {
+  height: 200px;
 }
