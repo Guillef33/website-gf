@@ -27,13 +27,6 @@ function Contacto() {
 
   return (
     <>
-      {/* <div className="title">
-        <h3>Escribinos solicitando el libro que buscas</h3>
-        <p>
-          Este formulario envia mails a 800golpeseditorial@gmail.com usando el
-          servicio emailjs
-        </p>
-      </div> */}
       <div className="container form-wrapper">
         <form onSubmit={sendEmail} className="estilos-formulario">
           <div className="form-group">
