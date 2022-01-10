@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import WebCard from "./WebCard";
 import Categories from "./Categories";
-import items from "../projects.js";
+import items from "../projects/projects.js";
 
 import './portfolio.css';
 
@@ -25,8 +25,7 @@ function App() {
   return (
     <main>
       <section className="menu section">
-        <h2 className="title">Our Menu</h2>
-        <div className="underline"></div>
+        <h2 className="title">My portfolio</h2>
         <Categories categories={categories} filterItems={filterItems} />
         <WebCard items={menuItems} />
       </section>

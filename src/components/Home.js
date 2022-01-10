@@ -2,9 +2,9 @@ import React, { useState } from "react";
 import ReactDom from "react-dom";
 import ReactPlayer from "react-player";
 
-import Hero from "./Hero";
-import projects from './projects'
-import Project from "./Project";
+import Hero from "./hero/Hero";
+import projects from './projects/projects'
+import Project from "./projects/Project";
 
 // FAQ module 
 import Question from './faqs/Questions'
@@ -12,13 +12,15 @@ import faq from './faqs/faq'
 
 // Reviews Component
 
-import Review from "./Review";
-import reviews from './data.js'
+import Review from "./reviews/Review";
+import reviews from './reviews/data.js'
 import Portfolio from './portfolio/Portfolio'
+
+import SobreMi from '../pages/Sobre-mi'
 
 //CSS
 import "../index.css";
-import "../review.css";
+// import "../review.css";
 
 function Home() {
 
@@ -28,7 +30,8 @@ function Home() {
   return (
     <>
       <Hero />
-      <section>
+
+      {/* <section>
         <h1 className="section-title">Showreel</h1>
         <div className="video-wrapper">
           <ReactPlayer
@@ -36,8 +39,8 @@ function Home() {
             className="video-frame"
           />
         </div>
-      </section>
-      <section>
+      </section> */}
+      {/* <section>
         <h1 className="section-title">Our works</h1>
         <div className="container projectList isNovedad">
           {projects
@@ -54,8 +57,8 @@ function Home() {
               />
             ))}
         </div>
-      </section>
-      <section className="section-team container">
+      </section> */}
+      {/* <section className="section-team container">
         <h1 className="section-title">Our team</h1>
         <div className="video-wrapper">
           <img
@@ -63,12 +66,11 @@ function Home() {
             alt="team"
           />
         </div>
+      </section> */}
+      <section className="container">
+        <SobreMi />
       </section>
       <section className="container video-wrapper">
-        {/* {reviews.map((review) => (
-          <Review />
-        ))} */}
-
         <Review />
       </section>
       <section>
@@ -76,23 +78,23 @@ function Home() {
       </section>
 
       <section>
-          <div className="container">
-            <section className="info">
-              {faq.map((question) => {
-                return <Question key={question.id} {...question} />;
-              })}
-            </section>
-          </div>
-      </section>
-      
-      <section className="container video-wrapper">
-        <div>
-          <h3>Contacto: guillef33@gmail.com</h3>
-          <p>Corrientes 745</p>
-          <p>Microcentro de Buenos Aires</p>
-          <p>11 67083592</p>
+        <div className="container">
+          <section className="info">
+            {faq.map((question) => {
+              return <Question key={question.id} {...question} />;
+            })}
+          </section>
         </div>
       </section>
+
+      {/* <section className="container video-wrapper">
+          <div>
+            <h3>Contacto: guillef33@gmail.com</h3>
+            <p>Corrientes 745</p>
+            <p>Microcentro de Buenos Aires</p>
+            <p>11 67083592</p>
+          </div>
+        </section> */}
     </>
   );
 }

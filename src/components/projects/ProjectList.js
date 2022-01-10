@@ -3,7 +3,7 @@ import projects from "./projects.js";
 import Project from "./Project";
 
 //CSS
-import "../index.css";
+import "../../index.css";
 
 function ProjectList() {
   return (

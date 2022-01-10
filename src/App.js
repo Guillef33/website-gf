@@ -1,16 +1,16 @@
 // Components
-import Contacto from './components/Contacto'
+import Contacto from './components/contacto/Contacto'
 import Footer from './components/Footer'
-import Nav from './components/Nav/Nav'
+import Nav from './components/nav/Nav'
 
 import Home from "./components/Home";
-import ProjectList from "./components/ProjectList";
-import ProjectPage from "./components/ProjectPage";
+import ProjectList from "./components/projects/ProjectList";
+import ProjectPage from "./components/projects/ProjectPage";
 
 import Portfolio from './components/portfolio/Portfolio'
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import SobreMi from './components/Sobre-mi';
+import SobreMi from './pages/Sobre-mi';
 // import Panel from './components/NavBarHam';
 
 function App() {

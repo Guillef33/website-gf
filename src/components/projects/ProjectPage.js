@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 
 //CSS
-import "../index.css";
+import "../../index.css";
 // Constants
 const ProjectImage = (props) => {
   const { img } = props; // objet destructuring the properties

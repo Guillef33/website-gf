@@ -1,0 +1,25 @@
+
+.hero-section {
+  background-size: cover;
+  background-position-y: center;
+  text-align: center;
+  margin: auto;
+  background-repeat: no-repeat;
+}
+
+.hero-section h3 {
+  color: white;
+background-color: cadetblue;
+padding: 10px 20px;
+}
+
+.hero-title h1 {
+  font-size: 6em;
+  color: #455073;
+  line-height: 1;
+}
+
+.hero-title p {
+    color: #455073;
+    font-size: 2em;
+}

@@ -1,6 +1,8 @@
 import React, { useRef } from "react";
 import emailjs from "emailjs-com";
 
+import './contacto.css';
+
 function Contacto() {
   function sendEmail(e) {
     e.preventDefault();
@@ -61,7 +63,9 @@ function Contacto() {
               placeholder="Escribi tu email"
             />
           </div>
-          <input type="submit" value="Enviar" className="btn btn-primary" />
+          <div className="submit-container">
+            <input type="submit" value="Enviar" className="btn-primary" />
+          </div>
         </form>
       </div>
     </>
