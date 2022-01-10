@@ -1,24 +1,28 @@
 import React, { useState } from "react";
 import WebCard from "./WebCard";
 import Categories from "./Categories";
-import items from "../projects/projects.js";
+import items from "./projects.js";
 
 import './portfolio.css';
 
 //Get all the value of the cateogies prop
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
+const allTechnologies = ["all", ...new Set(items.map((item) => item.technology))];
+
 console.log(allCategories);
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
-  const [categories, seCategories] = useState(allCategories);
+  const [categories, setCategories] = useState(allCategories);
+  const [technology, setTechnology] = useState(allTechnologies);
 
-  const filterItems = (category) => {
-    if (category === "all") {
+
+  const filterItems = (technology) => {
+    if (technology === "all") {
       setMenuItems(items);
       return;
     }
-    const newItems = items.filter((item) => item.category === category);
+    const newItems = items.filter((item) => item.technology === technology);
     setMenuItems(newItems);
   };
 
@@ -26,7 +30,7 @@ function App() {
     <main>
       <section className="menu section">
         <h2 className="title">My portfolio</h2>
-        <Categories categories={categories} filterItems={filterItems} />
+        <Categories technology={technology} filterItems={filterItems} />
         <WebCard items={menuItems} />
       </section>
     </main>

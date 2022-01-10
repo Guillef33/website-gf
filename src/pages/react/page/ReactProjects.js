@@ -21,8 +21,8 @@ function ReactProjects() {
         List
       </NavLink>
 
-      <NavLink to="/countdowm" className="HeroLink">
-        Countdowm
+      <NavLink to="/counter" className="HeroLink">
+        Counter
       </NavLink>
     </div>
   );

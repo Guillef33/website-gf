@@ -3,7 +3,7 @@ import ReactDom from "react-dom";
 import ReactPlayer from "react-player";
 
 import Hero from "./hero/Hero";
-import projects from './projects/projects'
+import projects from './portfolio/projects'
 import Project from "./projects/Project";
 
 // FAQ module 
@@ -20,6 +20,7 @@ import SobreMi from '../pages/Sobre-mi'
 
 //CSS
 import "../index.css";
+import ReactProjects from "../pages/react/page/ReactProjects";
 // import "../review.css";
 
 function Home() {
@@ -70,11 +71,18 @@ function Home() {
       <section className="container">
         <SobreMi />
       </section>
-      <section className="container video-wrapper">
-        <Review />
+      <section className="container">
+        <div className="hero-title">
+          <h1>Estos son mis proyectos en React.Js</h1>
+        </div>
+        <ReactProjects />
       </section>
+
       <section>
         <Portfolio />
+      </section>
+      <section className="container video-wrapper">
+        <Review />
       </section>
 
       <section>
@@ -86,15 +94,6 @@ function Home() {
           </section>
         </div>
       </section>
-
-      {/* <section className="container video-wrapper">
-          <div>
-            <h3>Contacto: guillef33@gmail.com</h3>
-            <p>Corrientes 745</p>
-            <p>Microcentro de Buenos Aires</p>
-            <p>11 67083592</p>
-          </div>
-        </section> */}
     </>
   );
 }

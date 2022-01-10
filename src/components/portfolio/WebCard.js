@@ -4,17 +4,29 @@ const Menu = ({ items }) => {
   return (
     <div className="section-center">
       {items.map((menuItem) => {
-        const { id, title, img, description, category, job, url, featuredImage } = menuItem;
+        const {
+          id,
+          title,
+          img,
+          description,
+          category,
+          job,
+          url,
+          featuredImage,
+          technology,
+        } = menuItem;
         return (
           <article key={id} className="menu-item">
             <img src={featuredImage} alt={title} className="photo" />
             <div className="item-info">
               <header>
-                <h4 className="price">{job}</h4>
+                <a href={url} className="item-text">
+                  <h4>{title}</h4>{" "}
+                </a>
               </header>
-              <h4>{title}</h4>
-              <p>{category}</p>
-              <p className="item-text">{url}</p>
+              <h4 className="price">{technology}</h4>
+
+              <p>{description}</p>
             </div>
           </article>
         );

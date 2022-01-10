@@ -1,7 +1,7 @@
 // Components
 import Contacto from './components/contacto/Contacto'
 import Footer from './components/Footer';
-// import Nav from './components/nav/Nav';
+import Nav from './components/nav/Nav';
 
 import Home from "./components/Home";
 import ProjectList from "./components/projects/ProjectList";
@@ -11,7 +11,9 @@ import Portfolio from './components/portfolio/Portfolio'
 
 //React
 import ReactProjects from './pages/react/page/ReactProjects';
-import Login from './pages/react/projects/login/Login'
+import Login from './pages/react/projects/login/Login';
+import Counter from "./pages/react/projects/counter/Counter";
+
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import SobreMi from './pages/Sobre-mi';
@@ -21,7 +23,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        {/* <Nav /> */}
+        <Nav />
         {/* <Panel /> */}
         <Switch>
           <Route exact path="/" component={Home} />
@@ -31,6 +33,7 @@ function App() {
           {/* <React /> */}
           <Route path="/react-projects" component={ReactProjects} />
           <Route path="/login" component={Login} />
+          <Route path="/counter" component={Counter} />
 
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/sobre-mi" component={SobreMi} />

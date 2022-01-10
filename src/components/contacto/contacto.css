@@ -19,6 +19,11 @@
   color: #c5c5c5;;
 }
 
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
 @media (max-width: 600px) {
     .estilos-formulario input {
       width: 300px;

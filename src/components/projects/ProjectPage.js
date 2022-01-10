@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import projects from "./projects";
+import projects from "../portfolio/projects";
 import {
   BrowserRouter as Router,
   Switch,
