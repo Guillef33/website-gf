@@ -18,3 +18,9 @@
   background-color: #455073;
   color: #c5c5c5;;
 }
+
+@media (max-width: 600px) {
+    .estilos-formulario input {
+      width: 300px;
+  }
+}
