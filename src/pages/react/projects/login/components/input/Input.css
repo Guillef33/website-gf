@@ -1,10 +1,11 @@
 input {
     display: block;
     border: none;
-    border-radius: 20px;
-    padding: 20px;
+    border-radius: 10px;
+    padding: 10px;
     background-color: white;
-    width: -webkit-fill-available;
+    width: 100%;
+box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 3px, rgba(0, 0, 0, 0.24) 0px 1px 2px;
 }
 
 .input-error {

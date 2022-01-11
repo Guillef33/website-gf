@@ -3,8 +3,6 @@ import "./Input.css";
 
 const Input = ( { atributo, handleChange, param }) => {
 
-
-
     return (
         <div>
             <input 

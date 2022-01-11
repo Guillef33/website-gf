@@ -56,53 +56,60 @@ function Login() {
   }
 
   return (
-    <div className="login-container">
-      {isLogin ? (
-        <div>
-          <h1>Bienvenido, {user}</h1>
-          <p>Esta es la entrada de tu aplicacion</p>
-        </div>
-      ) : (
-        <div className="login-content">
-          <Title text="Bienvenido, esta es una aplicacion de Login con LocalStorage y Hooks. Puedes ingresar con los datos demo: Guillermo, 123456. Nos vemos dentro de la app." />
-          {hasError && (
-            <label className="label-error">
-              Su usuario o contrasena no existe en nuestra plataforma. Por
-              favor, revise los datos ingresados.
-            </label>
-          )}
-          <Label text="Usuario" />
-          <Input
-            atributo={{
-              id: "usuario",
-              name: "usuario",
-              type: "text",
-              placeholder: "ingrese tu usuario",
-            }}
-            handleChange={handleChange}
-          />
-          <Label text="Contrasena" />
-          <Input
-            atributo={{
-              id: "contrasena",
-              name: "contrasena",
-              type: "password",
-              placeholder: "ingrese tu contrasena",
-            }}
-            handleChange={handleChange}
-            param={passwordError}
-          />
-          {passwordError && (
-            <label className="label-error">
-              Contrasena invalida o incompleta
-            </label>
-          )}
-
-          <div className="submit-button-container">
-            <button onClick={handleSubmit}>Ingresar</button>
+    <div className="login-wrapper-page">
+      <div className="login-container">
+        {isLogin ? (
+          <div>
+            <h1>Bienvenido, {user}</h1>
+            <p>Esta es la entrada de tu aplicacion</p>
           </div>
-        </div>
-      )}
+        ) : (
+          <div className="login-content">
+            <Title
+              title="Hello. Sign in to your account"
+              text="The demo data:  Guillermo, 123456"
+            />
+
+            <div className="input-wrapper">
+              <Label text="Usuario" />
+              <Input
+                atributo={{
+                  id: "usuario",
+                  name: "usuario",
+                  type: "text",
+                  placeholder: "ingrese tu usuario",
+                }}
+                handleChange={handleChange}
+              />
+              {hasError && (
+                <p className="label-error">
+                  Su usuario no existe, revise los datos ingresados.
+                </p>
+              )}
+              <Label text="Contrasena" />
+              <Input
+                atributo={{
+                  id: "contrasena",
+                  name: "contrasena",
+                  type: "password",
+                  placeholder: "ingrese tu contrasena",
+                }}
+                handleChange={handleChange}
+                param={passwordError}
+              />
+              {passwordError && (
+                <p className="label-error">Contrasena invalida o incompleta</p>
+              )}
+              <div className="submit-button-container">
+                <button onClick={handleSubmit}>Ingresar</button>
+              </div>
+            </div>
+          </div>
+        )}
+      </div>
+      <div className="login-welcome">
+        <h2>Bienvenido a nuestra casa</h2>
+      </div>
     </div>
   );
 }

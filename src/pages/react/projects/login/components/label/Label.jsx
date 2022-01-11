@@ -8,7 +8,7 @@ const Label = ( { text }) => {
     // const { text } = props
 
     return (
-        <div className='title-container'>
+        <div className='label-container'>
             <label>{text}</label>
         </div>
     )

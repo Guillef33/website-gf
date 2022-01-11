@@ -1,4 +1,7 @@
+.label-container {
+    margin: 10px 0px;
+}
+
 label {
-    color: whitesmoke;
-    margin: 20px 0px;
+    color: black;
 }

@@ -1,16 +1,25 @@
-.login-container {
+.login-wrapper-page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
 
-    margin: auto;
-    height: 900px;
-    background-color: cadetblue;
+.login-container {
+    background-color: white;
+    padding: 50px 0px;
+    height: 90vh;
+}
+
+.login-welcome {
+    background-image: url('./login-welcome.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .login-content {
-    text-align: center;
-        display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
     align-items: center;
 }
 
@@ -20,4 +29,25 @@
     padding: 20px;
     border-radius: 20px;
     border: none;
+}
+
+.input-wrapper {
+    width: 80%;
+    margin: auto;
+}
+
+.label-error {
+    color: red;
+}
+
+@media screen and (max-width: 760px) {
+    .login-wrapper-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    }
+
+    .login-welcome {
+        display: none;
+    }
+    
 }
