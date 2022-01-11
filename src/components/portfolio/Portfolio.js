@@ -29,7 +29,7 @@ function App() {
   return (
     <>
       <section className="portfolio-section">
-        <h2 className="title">My portfolio</h2>
+        <h2 className="title">Portfolio de trabajos</h2>
         <Categories technology={technology} filterItems={filterItems} />
         <WebCard items={menuItems} />
       </section>

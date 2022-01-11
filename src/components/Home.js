@@ -72,9 +72,6 @@ function Home() {
         <SobreMi />
       </section>
       <section className="container">
-        <div className="hero-title">
-          <h3>Estos son mis proyectos en React.Js</h3>
-        </div>
         <ReactProjects />
       </section>
 
