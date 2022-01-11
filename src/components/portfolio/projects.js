@@ -1,9 +1,17 @@
 // Constants
 
+import BuscaTuCoach from './buscatucoach.jpg';
+import FJComms from "./fjcomms.jpg";
+import Iniciativa from "./iniciativa.jpg";
+import Ecospend from "./ecospend.jpg";
+import MareFish from "./marefish.jpg";
+import Audience from "./audience.jpg";
+
+
 const projects = [
   {
     id: "1",
-    img: "https://secureservercdn.net/50.62.172.157/qnk.569.myftpupload.com/wp-content/uploads/2021/10/iniciativaLogo.png",
+    img: Iniciativa,
     title: "Iniciativa de archivos",
     partner: "",
     technology: "WordPress",
@@ -19,7 +27,7 @@ const projects = [
 
   {
     id: "2",
-    img: "https://ecospend.com/wp-content/uploads/2021/10/logoOk3-01-300x150.png",
+    img: Ecospend,
     title: "Ecospend",
     partner: "",
     technology: "WordPress",
@@ -35,7 +43,7 @@ const projects = [
 
   {
     id: "3",
-    img: "https://buscatucoach.com/wp-content/uploads/2020/12/Cursos-BuscaTuCoach.png",
+    img: BuscaTuCoach,
     title: "Busca tu coach",
     partner: "",
     technology: "WordPress",
@@ -50,7 +58,7 @@ const projects = [
   },
   {
     id: "4",
-    img: "https://www.audiencemakerssa.com/assets/img/Logo%20chico%20sin%20subt%20nuevo-blanco01-01-01.png",
+    img: Audience,
     title: "Audience Makers",
     partner: "Uanaknow",
     technology: "Javascript",
@@ -65,7 +73,7 @@ const projects = [
   },
   {
     id: "5",
-    img: "https://www.fjcommunications.com/images/fj-communcations-red.png",
+    img: FJComms,
     title: "FJ Communicatios",
     partner: "Uanaknow",
     technology: "Javascript",
@@ -80,7 +88,7 @@ const projects = [
   },
   {
     id: "6",
-    img: "https://www.fjcommunications.com/images/fj-communcations-red.png",
+    img: MareFish,
     title: "Marefish",
     partner: "TNP Creative",
     technology: "WordPress",

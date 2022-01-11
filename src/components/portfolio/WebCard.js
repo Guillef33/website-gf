@@ -17,7 +17,7 @@ const Menu = ({ items }) => {
         } = menuItem;
         return (
           <article key={id} className="menu-item">
-            <img src={featuredImage} alt={title} className="photo" />
+            <img src={img} alt={title} className="photo" />
             <div className="item-info">
               <header>
                 <a href={url} className="item-text">
@@ -26,7 +26,7 @@ const Menu = ({ items }) => {
               </header>
               <h4 className="price">{technology}</h4>
 
-              <p>{description}</p>
+              <p className="portfolio-description">{description}</p>
             </div>
           </article>
         );

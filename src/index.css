@@ -13,11 +13,6 @@ font-family: 'Source Sans Pro', sans-serif;
   background-color: #c5c5c5;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 .container {
   padding: 30px 200px;
 }
@@ -49,19 +44,6 @@ width: 300px;
   padding: 30px;
 }
 
-.title {
-  text-align: center;
-  margin-top: 3em;
-}
-/* 
-.projectList {
-  display: grid;
-  width: 90vw;
-  max-width: 1170px;
-  margin: 2em auto;
-  gap: 2rem;
-  grid-template-columns: repeat(3, 1fr);
-} */
 
 .form-filteredBook {
   display: flex;
@@ -69,26 +51,14 @@ width: 300px;
 }
 
 
-/* Heredado */
-
-
 a:hover {
   text-decoration: none;
 }
 
 
-.title {
-  text-align: center;
-  margin-top: 3em;
-}
-
 .projectList {
   display: grid;
     grid-template-columns: repeat(3, 1fr);
-
-  /* width: 90vw; */
-  /* max-width: 1170px;
-  margin: 2em auto; */
   gap: 2rem;
 }
 
