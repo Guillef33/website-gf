@@ -18,7 +18,7 @@ import Jobs from './pages/react/projects/jobs/Jobs'
 
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
-import SobreMi from './pages/Sobre-mi';
+import SobreMi from './components/Sobre-mi';
 // import Panel from './components/NavBarHam';
 
 function App() {

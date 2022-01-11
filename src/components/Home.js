@@ -16,7 +16,7 @@ import Review from "./reviews/Review";
 import reviews from './reviews/data.js'
 import Portfolio from './portfolio/Portfolio'
 
-import SobreMi from '../pages/Sobre-mi'
+import SobreMi from './Sobre-mi'
 
 //CSS
 import "../index.css";
@@ -78,7 +78,7 @@ function Home() {
         <ReactProjects />
       </section>
 
-      <section>
+      <section className="container">
         <Portfolio />
       </section>
       <section className="container video-wrapper">

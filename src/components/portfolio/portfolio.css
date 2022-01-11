@@ -3,18 +3,16 @@ a {
   color: #455073 ;
 }
 
+.portfolio-section {
+  margin: 50px 0px;
+}
+
 .title {
   text-align: center;
   color: #455073 ;
-  font-size: 80px;
+  font-size: 3em;
 }
-/* .underline {
-  width: 5rem;
-  height: 0.25rem;
-  background: var(--clr-gold);
-  margin-left: auto;
-  margin-right: auto;
-} */
+
 .btn-container {
   margin-bottom: 4rem;
   display: flex;
