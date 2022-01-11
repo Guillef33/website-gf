@@ -73,7 +73,7 @@ function Home() {
       </section>
       <section className="container">
         <div className="hero-title">
-          <h1>Estos son mis proyectos en React.Js</h1>
+          <h3>Estos son mis proyectos en React.Js</h3>
         </div>
         <ReactProjects />
       </section>

@@ -13,6 +13,19 @@
   line-height: 1;
 }
 
+
+.hero-title h2 {
+  font-size: 5em;
+  color: #455073;
+  line-height: 1;
+}
+
+.hero-title h3 {
+  font-size: 3em;
+  color: #455073;
+  line-height: 1;
+}
+
 .hero-title p {
     color: #455073;
     font-size: 2em;

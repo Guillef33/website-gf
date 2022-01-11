@@ -16,12 +16,14 @@ a {
   color: #455073 ;
 }
 
-.menu {
+/* .menu {
   padding: 5rem 0;
-}
+} */
 .title {
   text-align: center;
   margin-bottom: 2rem;
+  color: #455073 ;
+  font-size: 6em;
 }
 .underline {
   width: 5rem;
