@@ -1,7 +1,7 @@
 // Components
 import Contacto from './components/contacto/Contacto'
 import Footer from './components/Footer';
-import Nav from './components/nav/Nav';
+import Nav from './components/nav/Nav.js';
 
 import Home from "./components/Home";
 import ProjectList from "./components/projects/ProjectList";
