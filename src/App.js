@@ -13,6 +13,8 @@ import Portfolio from './components/portfolio/Portfolio'
 import ReactProjects from './pages/react/page/ReactProjects';
 import Login from './pages/react/projects/login/Login';
 import Counter from "./pages/react/projects/counter/Counter";
+import ToDoList from './pages/react/projects/list/List'
+import Jobs from './pages/react/projects/jobs/Jobs'
 
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
@@ -34,6 +36,8 @@ function App() {
           <Route path="/react-projects" component={ReactProjects} />
           <Route path="/login" component={Login} />
           <Route path="/counter" component={Counter} />
+          <Route path="/list" component={ToDoList} />
+          <Route path="/jobs" component={Jobs} />
 
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/sobre-mi" component={SobreMi} />

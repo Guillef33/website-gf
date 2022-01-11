@@ -1,0 +1,178 @@
+
+:root {
+  --main-bg-color: hsl(234, 17%, 12%);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Text', sans-serif;
+  
+  
+}
+
+.Lista {
+  background-image: url('holyday-bg.jpg');
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.list-wrapper {
+  background-color: white;
+    width: 400px;
+    height: 80vh;
+    padding: 2em;
+    text-align: center;
+}
+
+.Lista ul {
+  list-style: none;
+      display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.Lista svg {
+      margin-right: 20px;
+}
+
+
+.Lista h2 {
+ padding-bottom: 0.5em;
+ color: black;
+font-family: 'Mountains of Christmas', cursive;
+font-size: 4em;
+}
+
+.Lista li {
+ font-weight: regular;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Lista .addRegalo {
+  margin: 20px 0px;
+  /* display: flex;
+  justify-content: space-between; */
+}
+
+.Lista .addRegaloEnModal {
+    margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Lista input {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 20px;
+  display: block;
+  margin: 10px auto;
+      width: 80%;
+}
+
+.Lista button {
+  background-color: brown;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 20px;
+      max-height: 40px;
+      margin: 10px auto;
+}
+
+.button-counter {
+  margin: auto;
+}
+
+
+.empty-state {
+  padding: 4em;
+}
+
+.counter-wrapper {
+  display: flex;
+  align-items: center;
+    justify-content: center;
+}
+
+/* .counter-wrapper button {
+  margin-right:5px;
+} */
+
+.counter-wrapper div {
+  margin-right:5px;
+}
+
+.modal-container {
+  background-color: whitesmoke;
+position: absolute;
+    left: 0px;
+    top: 0;
+    height: 100vh;
+    width: 30%;
+    display: flex;
+align-items: center;
+transition: all 0.3s ease;
+
+}
+
+.button-cerrar {
+  width: 200px;
+  margin: 10px auto;
+}
+
+.regalo-cantidad-badge {
+    /* position: absolute;
+    left: 0px;
+    right: 350px;
+    top: 200px; */
+    color: red;
+  }
+.regalo-card {
+  display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+  .hideModal {
+    display: none;
+  }
+
+  .showModal {
+    display: block;
+  }
+
+  .modal {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    display: block;
+    padding: 2em;
+    min-width: 20em;
+    max-width: 70%;
+    color: #f00;
+    background-color: whitesmoke;
+    border-radius: 1em;
+    transform: translate(-50%, -50%);
+    outline: transparent;
+
+  }
+
+  .regalo-imagen {
+    width: 20%;
+  }
+
+  .regalo-dedicatoria {
+    color: gray;
+    font-size: 10px;
+  }

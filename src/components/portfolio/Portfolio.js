@@ -28,7 +28,7 @@ function App() {
 
   return (
     <main>
-      <section className="menu section">
+      <section className="menu">
         <h2 className="title">My portfolio</h2>
         <Categories technology={technology} filterItems={filterItems} />
         <WebCard items={menuItems} />

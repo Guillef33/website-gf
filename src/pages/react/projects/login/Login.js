@@ -56,7 +56,7 @@ function Login() {
   }
 
   return (
-    <div className="login-wrapper-page">
+    <div className="container login-wrapper-page">
       <div className="login-container">
         {isLogin ? (
           <div>
@@ -108,7 +108,6 @@ function Login() {
         )}
       </div>
       <div className="login-welcome">
-        <h2>Bienvenido a nuestra casa</h2>
       </div>
     </div>
   );
