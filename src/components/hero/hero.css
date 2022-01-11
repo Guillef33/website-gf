@@ -1,4 +1,6 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,200;0,300;0,400;0,700;1,700&display=swap');
+
 .hero-section {
   background-size: cover;
   background-position-y: center;
@@ -11,6 +13,8 @@
   font-size: 6em;
   color: #455073;
   line-height: 1;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 
@@ -27,8 +31,11 @@
 }
 
 .hero-title p {
+  margin: 10px 0px;
     color: #455073;
     font-size: 2em;
+      font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 300;
 }
 
 @media (max-width: 600px) {

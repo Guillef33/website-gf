@@ -9,12 +9,13 @@ function Hero() {
   return (
     <div className="hero-section container">
       <div className="hero-title">
-        <h1>Frontend Developer & Project Manager</h1>
-        <p>
-          I lead teams and love to code websites with great user experience
-        </p>
+        <h1>
+          <strong>Frontend</strong> Developer & Project{" "}
+          <strong>Manager</strong>
+        </h1>
+        <p>I lead teams and love to code websites with great user experience</p>
       </div>
-        <Contacto />
+      <Contacto />
     </div>
   );
 }
