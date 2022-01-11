@@ -23,9 +23,9 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <Nav />
         {/* <Panel /> */}
         <Switch>
-          <Nav />
           <Route exact path="/" component={Home} />
           <Route path="/projects" component={ProjectList} />
           <Route path="/projects" component={ProjectList} />
