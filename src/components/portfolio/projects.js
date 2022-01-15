@@ -6,6 +6,7 @@ import Iniciativa from "./iniciativa.jpg";
 import Ecospend from "./ecospend.jpg";
 import MareFish from "./marefish.jpg";
 import Audience from "./audience.jpg";
+import Auditorbot from './auditorbot.jpg'
 
 
 const projects = [
@@ -19,7 +20,7 @@ const projects = [
     url: "https://iniciativadearchivos.org/",
     category: "ONG",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut orci id elit varius gravida vel eget augue. Morbi laoreet luctus quam vel tempor. Pellentesque a maximus nibh. ",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ut orci id elit varius gravida vel eget augue. ",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
@@ -35,7 +36,7 @@ const projects = [
     url: "https://ecospend.com/",
     category: "FinTech",
     description:
-      "Proin faucibus sem in suscipit malesuada. Phasellus varius tristique gravida. Aliquam imperdiet, augue nec vehicula tempus, ipsum mauris dapibus erat, in laoreet nisl risus interdum nibh. ",
+      "Proin faucibus sem in suscipit malesuada. Phasellus varius tristique gravida. Aliquam imperdiet. ",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
@@ -51,7 +52,7 @@ const projects = [
     url: "https://buscatucoach.com/",
     category: "App",
     description:
-      "Nam quis est et velit aliquam sodales. Nam ac massa dolor. Duis placerat massa sit amet sollicitudin hendrerit. Sed vel mauris in mi vehicula fermentum. Nunc fermentum enim quis lacus laoreet fermentum. ",
+      "Nam quis est et velit aliquam sodales. Nam ac massa dolor. Duis placerat massa sit amet sollicitudin hendrerit.",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
@@ -66,7 +67,7 @@ const projects = [
     url: "https://www.audiencemakerssa.com/",
     category: "Landing Page",
     description:
-      "Nam quis est et velit aliquam sodales. Nam ac massa dolor. Duis placerat massa sit amet sollicitudin hendrerit. Sed vel mauris in mi vehicula fermentum. Nunc fermentum enim quis lacus laoreet fermentum. ",
+      "Nam quis est et velit aliquam sodales. Nam ac massa dolor. Duis placerat massa sit amet sollicitudin hendrerit. ",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
@@ -81,7 +82,7 @@ const projects = [
     url: "https://www.fjcommunications.com//",
     category: "Landing Page",
     description:
-      "Consultoría de comunicación y RR.PP. tanto en España, Europa, como LATAM y EEUU. Queremos ayudarte a comunicar, poner tu marca en movimiento y llenarla de contenido.  ",
+      "Consultoría de comunicación y RR.PP. tanto en España, Europa, como LATAM y EEUU. ",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
@@ -96,14 +97,14 @@ const projects = [
     url: "https://www.marefish.es",
     category: "Ecommerce",
     description:
-      "Se pesca por la noche, se descarga de madrugada, se subasta por la mañana, por la tarde viaja a MARE FISH y por la noche llega a nuestro puesto de Mercamadrid.",
+      "Ecommerce para MareFish historico negocio ubicado en Mercamadrid..",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
   },
   {
     id: "7",
-    img: "https://www.fjcommunications.com/images/fj-communcations-red.png",
+    img: Auditorbot,
     title: "Auditor Bot",
     partner: "Shake Again",
     technology: "Laravel",
@@ -111,7 +112,7 @@ const projects = [
     url: "https://auditorbot.com/",
     category: "Web Scraping App",
     description:
-      "App realizada en Laravel para brindar informacion de pricing a responsables de ecommerce. Mi tarea tuvo que ver con liderar el proceso de desarrollo y los entregables",
+      "App realizada en Laravel para brindar informacion de pricing a responsables de ecommerce. ",
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",

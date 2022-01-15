@@ -168,6 +168,10 @@ align-items: center;
 
   }
 
+  .regalo-title {
+    font-size: 12px;
+  }
+
   .regalo-imagen {
     width: 20%;
   }
@@ -175,4 +179,12 @@ align-items: center;
   .regalo-dedicatoria {
     color: gray;
     font-size: 10px;
+  }
+
+  @media screen and (max-width: 600px) {
+    .modal-container {
+      height: 100%;
+    width: 100%;
+    }
+    
   }

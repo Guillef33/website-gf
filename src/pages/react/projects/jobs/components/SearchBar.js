@@ -15,7 +15,7 @@ function SearchBar({
     <>
       <div className="top-bar">
         <h1>Nuevo puestos de empleo</h1>
-        <div>
+        <div className="search-buttons-container">
           <input
             type="text"
             placeholder="Busca por posicion"

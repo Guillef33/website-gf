@@ -19,6 +19,7 @@ import Jobs from './pages/react/projects/jobs/Jobs'
 
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import SobreMi from './components/Sobre-mi';
+// import User from './pages/react/projects/placeholder/User';
 // import Panel from './components/NavBarHam';
 
 function App() {
@@ -38,6 +39,7 @@ function App() {
           <Route path="/counter" component={Counter} />
           <Route path="/list" component={ToDoList} />
           <Route path="/jobs" component={Jobs} />
+          {/* <Route path="/users" component={User} /> */}
 
           <Route path="/portfolio" component={Portfolio} />
           <Route path="/sobre-mi" component={SobreMi} />

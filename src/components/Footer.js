@@ -9,24 +9,23 @@ function Footer() {
     <footer className="footerContainer container">
       <div>
         <h3>
-         Web design and visual identity agency based in Buenos Aires, Argentina.
+         w5
         </h3>
       </div>
       <div>
         <h3>Secciones</h3>
         <ul>
-          <li>Autores</li>
-          <li>Catalogo</li>
-          <li>Contacto</li>
+          <li>Sobre Mi</li>
+          <li>React Projects</li>
+          <li>Websites</li>
         </ul>
       </div>
 
       <div>
         <h3>Redes Sociales</h3>
         <ul>
-          <li>Facebook</li>
-          <li>Twitter</li>
-          <li>Instagram</li>
+          <li>Linkedin</li>
+          <li>Email</li>
         </ul>
       </div>
     </footer>
