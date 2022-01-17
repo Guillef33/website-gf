@@ -1,0 +1,18 @@
+table {
+    width: 100%;
+    text-align: center;
+}
+
+tbody tr td {
+    font-weight: 100;
+}
+
+.menu {
+    background-color: transparent;
+}
+
+.menu a {
+        color: #455073;
+        text-decoration: none;
+
+}

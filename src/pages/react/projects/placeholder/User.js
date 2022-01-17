@@ -1,7 +1,9 @@
 import React , { Component } from 'react';
-import Axios from './axios'
+import axios from 'axios'
+import { connect } from 'react-redux';
+import './user.css'
 
-class Users extends Component() {
+class Users extends Component {
   constructor() {
     super();
     this.state = {
@@ -9,34 +11,30 @@ class Users extends Component() {
     };
   }
 
-  componentDidMount() {
+  async componentDidMount() {
+
+    const respuesta = await axios.get(
+      "https://jsonplaceholder.typicode.com/users"
+    );
+    // console.log('respuesta:', respuesta);
+
     this.setState({
-      usuarios: [
-        {
-          nombre: "Rodolfo",
-          correo: "rodolfo@gmail.com",
-          enlace: "rodolfo.com",
-        },
-        {
-          nombre: "Platzi",
-          correo: "platzi@platzi.com",
-          enlace: "platzi.com",
-        },
-      ],
+      usuarios: respuesta.data
     });
   }
 
   ponerFilas = () => [
     this.state.usuarios.map((usuario) => (
-      <tr>
+      <tr key={usuario.id}>
         <td> {usuario.name}</td>
-        <td> {usuario.correo}</td>
-        <td> {usuario.enlace}</td>
+        <td> {usuario.email}</td>
+        <td> {usuario.website}</td>
       </tr>
     )),
   ];
 
   render() {
+    // console.log(this.state.usuarios)
     return (
       <>
         <div className="margen">
@@ -51,7 +49,6 @@ class Users extends Component() {
             <tbody>{ this.ponerFilas()}</tbody>
           </table>
         </div>
-        <p>Un texto para mis usuarios </p>
       </>
     );
   }

@@ -9,7 +9,7 @@ import './portfolio.css';
 const allCategories = ["all", ...new Set(items.map((item) => item.category))];
 const allTechnologies = ["all", ...new Set(items.map((item) => item.technology))];
 
-console.log(allCategories);
+// console.log(allCategories);
 
 function App() {
   const [menuItems, setMenuItems] = useState(items);
