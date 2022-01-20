@@ -3,7 +3,7 @@
 .about-container {
   display: grid;
   grid-template-columns: 1fr 2fr;
-  margin-bottom: 150px;
+  /* margin-bottom: 150px; */
 }
 
 .sobre-mi-title h2 {
