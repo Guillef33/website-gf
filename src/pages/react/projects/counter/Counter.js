@@ -20,7 +20,7 @@ function Counter() {
   const hoursToDisplay = (minutesRemaining - minutesToDisplay) / 60;
   const hoursRemaining = hoursToDisplay % 24;
 
-  const daysToDisplay = (hoursToDisplay - hoursRemaining) / 24;
+  const daysToDisplay = INITIAL_COUNT === 86400 ? 0 : (hoursToDisplay - hoursRemaining) / 24;
 
   const handleStart = () => {
     setStatus(STATUS.STARTED);

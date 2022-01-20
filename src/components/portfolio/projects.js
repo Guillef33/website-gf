@@ -1,13 +1,15 @@
 // Constants
 
-import BuscaTuCoach from './buscatucoach.jpg';
+import BuscaTuCoach from "./buscatucoach.jpg";
 import FJComms from "./fjcomms.jpg";
 import Iniciativa from "./iniciativa.jpg";
 import Ecospend from "./ecospend.jpg";
 import MareFish from "./marefish.jpg";
 import Audience from "./audience.jpg";
-import Auditorbot from './auditorbot.jpg'
-
+import Auditorbot from "./auditorbot.jpg";
+import Qualia from "./guaglia.jpeg";
+import Allycart from "./logo-allycart.png";
+import CounterImg from "../../pages/react/projects/counter/counter.png";
 
 const projects = [
   {
@@ -116,6 +118,48 @@ const projects = [
     isNovedad: true,
     featuredImage:
       "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+  },
+  {
+    id: "8",
+    img: Qualia,
+    title: "Qualia Seguros",
+    partner: "Shake Again",
+    technology: "Javascript",
+    job: "Front End",
+    url: "https://contrata.qualiaseguros.com/landing/quienes-somos/",
+    category: "Javascript",
+    description: "Landings pages para el lanzamientos de la marca. ",
+    isNovedad: true,
+    featuredImage:
+      "https://images.unsplash.com/photo-1641579281152-e5d633aa3775?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80",
+  },
+  {
+    id: "9",
+    img: Allycart,
+    title: "Allycart",
+    partner: "Allytech",
+    technology: "Javascript",
+    job: "Front End",
+    url: "https://www.allycart.com/",
+    category: "Javascript",
+    description:
+      "Landings page de Allycar, creá tu tienda online en pocos clics y empezá a conseguir clientes ",
+    isNovedad: false,
+    featuredImage: "",
+  },
+  {
+    id: "10",
+    img: CounterImg,
+    title: "Cuenta Regresiva",
+    partner: "FrontEnd Master",
+    technology: "React",
+    job: "Front End",
+    url: "https://pruebas-react-3.vercel.app/countdowm",
+    category: "React",
+    description:
+      "Landing page Countdown para el lanzamiento de un nuevo sitio web.",
+    isNovedad: false,
+    featuredImage: "",
   },
 ];
 

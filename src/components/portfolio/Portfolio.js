@@ -6,8 +6,11 @@ import items from "./projects.js";
 import './portfolio.css';
 
 //Get all the value of the cateogies prop
-const allCategories = ["all", ...new Set(items.map((item) => item.category))];
-const allTechnologies = ["all", ...new Set(items.map((item) => item.technology))];
+const allCategories = ["Todos", ...new Set(items.map((item) => item.category))];
+const allTechnologies = [
+  "Todos",
+  ...new Set(items.map((item) => item.technology)),
+];
 
 // console.log(allCategories);
 

@@ -71,16 +71,16 @@ function Home() {
       <section className="container">
         <SobreMi />
       </section>
-      <section className="container">
+      {/* <section className="container">
         <ReactProjects />
-      </section>
+      </section> */}
 
       <section className="container">
         <Portfolio />
       </section>
-      <section className="container video-wrapper">
+      {/* <section className="container video-wrapper">
         <Review />
-      </section>
+      </section> */}
 
       <section>
         <div className="container">

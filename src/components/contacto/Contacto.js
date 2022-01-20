@@ -10,25 +10,18 @@ function Contacto() {
 
   
   function handleChange(name, value) {
-    if (name === "name") {
-      // setUser(value);
-      console.log("Nombre de usuario agregado");
-    } else {
-      console.log("No es un texto de user");
+    console.log(handleChange);
       if (value.length < 6) {
-        // setPasswordError(true);
         console.log("Se activa el error");
+        sethasError(true)
       } else {
-        // setPasswordError(false);
-        // setPassword(value);
-        console.log("Buena contrasena siga sigas");
+         sethasError(false);
       }
     }
-  }
+
 
   function sendEmail(e) {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "gmail",
@@ -38,12 +31,17 @@ function Contacto() {
       )
       .then(
         (result) => {
+          // Aca podria agregar el modal de exito
+         // <ModalSuccess />
           console.log(result.text);
         },
         (error) => {
+          // Aca podria agregar el modal de exito
+          // <ModalError />
           console.log(error.text);
         }
       );
+    // alert('Tu mensaje ha sido enviado');
     e.target.reset();
   }
 
