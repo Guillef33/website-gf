@@ -15,10 +15,10 @@ function Nav () {
       <nav className="container">
         <h2>
           <StyledNavLink to="/" className="BrandLink">
-            W5
+            Magnetitte devs
           </StyledNavLink>
         </h2>
-        <NavBarHam />
+        {/* <NavBarHam /> */}
       </nav>
     );
   }

@@ -16,7 +16,7 @@ function Hero() {
           Un desarrollador hibrido, que puede liderar equipos y que ama codear
         </p>
       </div>
-      <Contacto />
+      {/* <Contacto /> */}
     </div>
   );
 }

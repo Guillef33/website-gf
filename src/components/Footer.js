@@ -9,23 +9,17 @@ function Footer() {
     <footer className="footerContainer container">
       <div>
         <h3>
-         w5
+          Si te interesa estar en contacto escribime a guillef33@gmail.com
         </h3>
       </div>
       <div>
-        <h3>Secciones</h3>
-        <ul>
-          <li>Sobre Mi</li>
-          <li>React Projects</li>
-          <li>Websites</li>
-        </ul>
-      </div>
-
-      <div>
-        <h3>Redes Sociales</h3>
-        <ul>
-          <li>Linkedin</li>
-          <li>Email</li>
+        <ul className="footer-list">
+          <li>
+            <a href="https://www.linkedin.com/in/guillef33/">Linkedin </a>
+          </li>
+          <li>
+            <a href="https://github.com/Guillef33">GitHub</a>
+          </li>
         </ul>
       </div>
     </footer>
