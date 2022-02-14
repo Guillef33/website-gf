@@ -10,7 +10,7 @@ function Hero() {
     <div className="hero-section container">
       <div className="hero-title">
         <h1>
-          <strong>Frontend</strong> Developer & Project <strong>Manager</strong>
+          <strong>Frontend & WordPress</strong> Developer
         </h1>
         <p>
           Un desarrollador hibrido, que puede liderar equipos y que ama codear
