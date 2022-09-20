@@ -161,6 +161,32 @@ const projects = [
     isNovedad: false,
     featuredImage: "",
   },
+  {
+    id: "11",
+    img: CounterImg,
+    title: "Ecommerce React",
+    partner: "Coder House",
+    technology: "React",
+    job: "Front End",
+    url: "https://ecommerce-flores.vercel.app/",
+    category: "React",
+    description: "Proyecto final del curso de React.Js en Coder House.",
+    isNovedad: true,
+    featuredImage: "",
+  },
+  {
+    id: "12",
+    img: CounterImg,
+    title: "Trello Clone",
+    partner: "Trainee",
+    technology: "React",
+    job: "Front End",
+    url: "https://trello-clone-guillef33.vercel.app/",
+    category: "React",
+    description: "Clone de Trello en proceso, base de datos con Firebase",
+    isNovedad: false,
+    featuredImage: "",
+  },
 ];
 
 export default projects;
